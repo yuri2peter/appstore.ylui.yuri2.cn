@@ -11,14 +11,14 @@
   .page-shop .app .title {
     font-size: 18px;
     margin: 10px 0; }
-  .page-shop .app .abs {
+  .page-shop .app .desc {
     font-size: 14px;
     color: gray;
     margin-bottom: 10px;
     height: 80px; }
   .page-shop .app .btn-group {
     text-align: right; }
-    .page-shop .app .btn-group .install {
+    .page-shop .app .btn-group .setup {
       padding: 4px;
       background: #1d7db1;
       color: white;
@@ -28,9 +28,9 @@
       font-size: 12px;
       cursor: pointer;
       transition: all 0.3s; }
-      .page-shop .app .btn-group .install:hover {
+      .page-shop .app .btn-group .setup:hover {
         box-shadow: 0 2px 15px 2px #e6e6e6; }
-      .page-shop .app .btn-group .install:hover {
+      .page-shop .app .btn-group .setup:hover {
         background: #249bdc; }
     .page-shop .app .btn-group .open {
       padding: 4px;
