@@ -1,5 +1,5 @@
-var urlStore = 'https://appstore.ylui.yuri2.cn';
-// var urlStore = 'http://127.0.0.1:8080';
+// var urlStore = 'https://appstore.ylui.yuri2.cn';
+var urlStore = 'http://127.0.0.1:8080';
 function getAppDataTemplate () {
   return {
     "addressBar": false,
@@ -42,7 +42,7 @@ YLApp.onReady(function () {
       desc: '这是一款jquery实现简单计算器代码。该jquery计算器使用 Bootstrap 4进行布局，并结合math.js数学库，实现简单的加减乘除和平方，开方等数学计算。',
       open: _.merge(getAppDataTemplate(), {
         title: '科学计算器',
-        url: urlStore + '/apps/calculator',
+        url: urlStore + '/apps/calculator/index.html',
         "icon": {
           "type": "fa",
           "content": "calculator",
@@ -57,7 +57,7 @@ YLApp.onReady(function () {
         apps: {
           'ylui-apps-calculator' : _.merge(getAppDataTemplate(), {
             title: '科学计算器',
-            url: urlStore + '/apps/calculator',
+            url: urlStore + '/apps/calculator/index.html',
             "icon": {
               "type": "fa",
               "content": "calculator",
@@ -79,7 +79,7 @@ YLApp.onReady(function () {
       desc: '这是一款可自定义logo的jQuery生成二维码插件。该插件可以实现二维码的生成，定义在二维码上显示的logo，以及logo的位置，文字颜色、字体等多种属性，非常实用。',
       open: _.merge(getAppDataTemplate(), {
         title: '二维码生成器',
-        url: urlStore + '/apps/qrcode',
+        url: urlStore + '/apps/qrcode/index.html',
         "icon": {
           "type": "fa",
           "content": "qrcode",
@@ -90,7 +90,7 @@ YLApp.onReady(function () {
         apps: {
           'ylui-apps-qrcode' : _.merge(getAppDataTemplate(), {
             title: '二维码生成器',
-            url: urlStore + '/apps/qrcode',
+            url: urlStore + '/apps/qrcode/index.html',
             "desc": "这是一款可自定义logo的jQuery生成二维码插件。该插件可以实现二维码的生成，定义在二维码上显示的logo，以及logo的位置，文字颜色、字体等多种属性，非常实用。",
             "poweredBy": "素材来源于网络",
             "icon": {
@@ -101,6 +101,35 @@ YLApp.onReady(function () {
           }),
         },
         shortcuts: ['ylui-apps-qrcode'],
+      }
+    },
+    '/apps/gen-password' : {
+      title: '随机字符串生成器',
+      desc: '一款自定义规则生成密码/随机字符串的小工具',
+      open: _.merge(getAppDataTemplate(), {
+        title: '随机字符串生成器',
+        url: urlStore + '/apps/gen-password/index.html',
+        "icon": {
+          "type": "fa",
+          "content": "qrcode",
+          "bg": "#adadad"
+        },
+      }),
+      setup: {
+        apps: {
+          'ylui-apps-gen-password' : _.merge(getAppDataTemplate(), {
+            title: '随机字符串生成器',
+            url: urlStore + '/apps/gen-password/index.html',
+            "desc": "一款自定义规则生成密码/随机字符串的小工具。",
+            "poweredBy": "素材来自小影的工具箱 http://tool.c7sky.com/",
+            "icon": {
+              "type": "fa",
+              "content": "gg-circle",
+              "bg": "#3af0f0"
+            },
+          }),
+        },
+        shortcuts: ['ylui-apps-gen-password'],
       }
     },
   };
