@@ -1,5 +1,5 @@
-// var urlStore = 'https://appstore.ylui.yuri2.cn';
-var urlStore = 'http://127.0.0.1:8080';
+var urlStore = 'https://appstore.ylui.yuri2.cn';
+// var urlStore = 'http://127.0.0.1:8080';
 function getAppDataTemplate () {
   return {
     "addressBar": false,
