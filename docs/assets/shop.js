@@ -42,7 +42,7 @@ YLApp.onReady(function () {
       desc: 'YLUI官方出品。实时同步，分享你的云桌面，全平台兼容，永久免费。快速入门：填写桌面名称，生成主桌面链接和分享链接，将它们妥善保存（建议加入收藏夹）。主桌面的改动会保存在云端，共享桌面的改动不会被保存。',
       open: _.merge(getAppDataTemplate(), {
         title: 'YLUI云桌面',
-        url: 'https://cloud.ylui.yuri2.cn',
+        url: 'http://cloud.ylui.yuri2.cn',
         "icon": {
           "type": "fa",
           "content": "cloud",
@@ -54,7 +54,7 @@ YLApp.onReady(function () {
         apps: {
           'ylui-apps-cloud' : _.merge(getAppDataTemplate(), {
             title: 'YLUI云桌面',
-            url: 'https://cloud.ylui.yuri2.cn',
+            url: 'http://cloud.ylui.yuri2.cn',
             "icon": {
               "type": "fa",
               "content": "cloud",
