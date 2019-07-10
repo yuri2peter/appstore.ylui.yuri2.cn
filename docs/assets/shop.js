@@ -37,6 +37,44 @@ function getAppDataTemplate () {
 }
 YLApp.onReady(function () {
   var apps = {
+    '/apps/yl-cloud' : {
+      title: 'YLUI云桌面',
+      desc: 'YLUI官方出品。实时同步，分享你的云桌面，全平台兼容，永久免费。快速入门：填写桌面名称，生成主桌面链接和分享链接，将它们妥善保存（建议加入收藏夹）。主桌面的改动会保存在云端，共享桌面的改动不会被保存。',
+      open: _.merge(getAppDataTemplate(), {
+        title: 'YLUI云桌面',
+        url: 'https://cloud.ylui.yuri2.cn',
+        "icon": {
+          "type": "fa",
+          "content": "cloud",
+          "bg": "#6b96cf"
+        },
+        "openMode": "outer",
+      }),
+      setup: {
+        apps: {
+          'ylui-apps-cloud' : _.merge(getAppDataTemplate(), {
+            title: 'YLUI云桌面',
+            url: 'https://cloud.ylui.yuri2.cn',
+            "icon": {
+              "type": "fa",
+              "content": "cloud",
+              "bg": "#6b96cf"
+            },
+            desc: 'YLUI官方出品。实时同步，分享你的云桌面，全平台兼容，永久免费。快速入门：填写桌面名称，生成主桌面链接和分享链接，将它们妥善保存（建议加入收藏夹）。主桌面的改动会保存在云端，共享桌面的改动不会被保存。',
+            "poweredBy": "yuri2",
+            "openMode": "outer",
+          }),
+        },
+        shortcuts: ['ylui-apps-cloud'],
+        menu: { 'ylui-apps-cloud':  {
+            "app": "ylui-apps-cloud",
+            "title": "YLUI云桌面",
+            "params": {},
+            "hash": ""
+          },
+        },
+      }
+    },
     '/apps/calculator' : {
       title: '科学计算器',
       desc: '这是一款jquery实现简单计算器代码。该jquery计算器使用 Bootstrap 4进行布局，并结合math.js数学库，实现简单的加减乘除和平方，开方等数学计算。',
@@ -72,6 +110,13 @@ YLApp.onReady(function () {
           }),
         },
         shortcuts: ['ylui-apps-calculator'],
+        menu: { 'ylui-apps-calculator':  {
+            "app": "ylui-apps-calculator",
+            "title": "科学计算器",
+            "params": {},
+            "hash": ""
+          },
+        },
       }
     },
     '/apps/qrcode' : {
@@ -101,6 +146,13 @@ YLApp.onReady(function () {
           }),
         },
         shortcuts: ['ylui-apps-qrcode'],
+        menu: { 'ylui-apps-qrcode':  {
+            "app": "ylui-apps-qrcode",
+            "title": "二维码生成器",
+            "params": {},
+            "hash": ""
+          },
+        },
       }
     },
     '/apps/gen-password' : {
@@ -130,6 +182,13 @@ YLApp.onReady(function () {
           }),
         },
         shortcuts: ['ylui-apps-gen-password'],
+        menu: { 'ylui-apps-gen-password':  {
+            "app": "ylui-apps-gen-password",
+            "title": "随机字符串生成器",
+            "params": {},
+            "hash": ""
+          },
+        },
       }
     },
   };
