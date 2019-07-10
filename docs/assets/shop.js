@@ -75,6 +75,42 @@ YLApp.onReady(function () {
         },
       }
     },
+    '/apps/baidu' : {
+      title: '百度一下',
+      desc: '百度一下，你就知道。',
+      open: _.merge(getAppDataTemplate(), {
+        title: '百度一下',
+        url: 'https://www.baidu.com',
+        "icon": {
+          "type": "fa",
+          "content": "search",
+          "bg": "#1588F5"
+        },
+      }),
+      setup: {
+        apps: {
+          'ylui-apps-baidu' : _.merge(getAppDataTemplate(), {
+            title: '百度一下',
+            url: 'https://www.baidu.com',
+            "icon": {
+              "type": "fa",
+              "content": "search",
+              "bg": "#1588F5"
+            },
+            desc: '百度一下，你就知道。',
+            "poweredBy": "baidu",
+          }),
+        },
+        shortcuts: ['ylui-apps-baidu'],
+        menu: { 'ylui-apps-baidu':  {
+            "app": "ylui-apps-baidu",
+            "title": "百度一下",
+            "params": {},
+            "hash": ""
+          },
+        },
+      }
+    },
     '/apps/calculator' : {
       title: '科学计算器',
       desc: '这是一款jquery实现简单计算器代码。该jquery计算器使用 Bootstrap 4进行布局，并结合math.js数学库，实现简单的加减乘除和平方，开方等数学计算。',
