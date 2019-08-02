@@ -263,7 +263,7 @@ YLApp.onReady(function () {
             "urlRandomToken": false,
             "background": true,
             "addressBar": false,
-            "autoRun": 1,
+            "autoRun": 9,
             "icon": {
               "type": "fa",
               "content": "image",
@@ -312,12 +312,12 @@ YLApp.onReady(function () {
             "single": true,
             "size": {
               "height": "y+4",
-              "width": "x+4"
+              "width": "x+4",
             },
             "urlRandomToken": false,
             "background": true,
             "addressBar": false,
-            "autoRun": 1,
+            "autoRun": 9,
             "icon": {
               "type": "fa",
               "content": "image",
