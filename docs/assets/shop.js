@@ -227,6 +227,60 @@ YLApp.onReady(function () {
         },
       }
     },
+    '/apps/cityscape' : {
+      title: '城市夜景动态壁纸',
+      desc: '一款精致的动态壁纸，仿佛翱翔于午夜的城市天空。',
+      open: _.merge(getAppDataTemplate(), {
+        title: '城市夜景动态壁纸',
+        url: urlStore + '/apps/cityscape/index.html',
+        "icon": {
+          "type": "fa",
+          "content": "image",
+          "bg": "#461e38"
+        },
+      }),
+      setup: {
+        apps: {
+          'ylui-apps-cityscape' : _.merge(getAppDataTemplate(), {
+            title: '城市夜景动态壁纸',
+            url: urlStore + '/apps/cityscape/index.html',
+            "desc": "一款精致的动态壁纸，仿佛翱翔于午夜的城市天空。",
+            "poweredBy": "素材来自于网络",
+            "plugin": true,
+            "position": {
+              "autoOffset": false,
+              "left": true,
+              "top": true,
+              "x": "-2",
+              "y": "-2"
+            },
+            "resizable": false,
+            "single": true,
+            "size": {
+              "height": "y+4",
+              "width": "x+4"
+            },
+            "urlRandomToken": false,
+            "background": true,
+            "addressBar": false,
+            "autoRun": 1,
+            "icon": {
+              "type": "fa",
+              "content": "image",
+              "bg": "#461e38"
+            },
+          }),
+        },
+        shortcuts: ['ylui-apps-cityscape'],
+        menu: { 'ylui-apps-cityscape':  {
+            "app": "ylui-apps-cityscape",
+            "title": "城市夜景动态壁纸",
+            "params": {},
+            "hash": ""
+          },
+        },
+      }
+    },
   };
   var eShop = $('.page-shop');
   for(var path in apps) {
